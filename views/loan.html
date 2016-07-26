@@ -1,45 +1,55 @@
-<form class="centerForm">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Phone Number</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">How much do you want charge</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="e.g. $50/day">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Select the type equipment</label>
-     <select class="form-control">
-      <option>Water Sports</option>
-      <option>Camping related</option>
-      <option>Winter Sports</option>
-      <option>Biking</option>
-      <option>Misc</option>
-  </select>
-  </div>
- 
-    
- <textarea class="form-control" rows="3" placeholder="Description of your gear"></textarea>
-  
-  <div class="form-group">
-    <label for="exampleInputFile">Profile Picture</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Upload the photo that you want to use on your profile</p>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">Pictures</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Upload photos that will be used to display the gear you want to loan out</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Post my AD
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
 
+
+    <form class="centerForm">
+        <div class="form-group">
+          <label >Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="profiles.email">
+        </div>
+        <div class="form-group">
+          <label >Phone Number</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" ng-model="profiles.phone">
+        </div>
+        <div class="form-group">
+          <label >How much do you want charge</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="e.g. $50/day" ng-model="profiles.rate">
+        </div>
+        <div class="form-group">
+          <label >Select the type equipment</label>
+           <select class="form-control" ng-model="profiles.typeEquipment">
+            <option>Water Sports</option>
+            <option>Camping related</option>
+            <option>Winter Sports</option>
+            <option>Biking</option>
+            <option>Misc</option>
+        </select>
+        </div>
+       
+          
+       <textarea class="form-control" rows="3" placeholder="Description of your gear" ng-model="profiles.descript"></textarea>
+        
+        <div class="form-group">
+          <label >Profile Picture</label>
+          <input ng-model="profiles.profilePic"type="text" class="form-control" placeholder="URL here">
+          <p class="help-block">Upload the photo that you want to use on your profile</p>
+        </div>
+        <div class="form-group">
+          <label >Pictures of your gear</label>
+          <input ng-model="profiles.photo1"type="text" class="form-control" placeholder="URL here" >
+          <input ng-model="profiles.photo2"type="text" class="form-control" placeholder="URL here" >
+          <input ng-model="profiles.photo3"type="text" class="form-control" placeholder="URL here" >
+          <input ng-model="profiles.photo4"type="text" class="form-control" placeholder="URL here" >
+          <p class="help-block">Upload photos that will be used to display the gear you want to loan out</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Post my AD
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+         
+    
+
+
+
+ 
+      

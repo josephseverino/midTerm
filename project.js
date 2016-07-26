@@ -22,7 +22,15 @@ angular.module('GearShare').config(function($routeProvider){
 
 angular.module('GearShare').controller('shareCtrl', ['$scope', '$location', shareCtrl])
 function shareCtrl( $scope, $location ) {
-    var sCtrl = this;
+    var  sCtrl = this;
+    
+    
+    
+    
+    
+    
+    
+    
     var foo = '' ;
     $scope.$on('$routeChangeSuccess', function() {
         sCtrl.locationPath = $location.path();
@@ -33,3 +41,111 @@ function shareCtrl( $scope, $location ) {
 angular.module('GearShare').controller('aboutCtrl', function ($scope) {
     $scope.aboutText = 'Every page on this site is embedded inside the index.html';
 });
+
+console.log('before my new controller and factory')
+
+// factory and controller for profiles
+
+angular.module('GearShare')
+    .controller('Profiles', Profiles)
+    .factory('profileFactory',profileFactory)
+console.log('after my new controller and factory')
+
+Profiles.$inject = ['profileFactory']
+
+function Profiles(profileFactory){
+    console.log('Profiles function is good')
+    var profiles = this;
+    
+     profiles.rate = '' // this is the value of the input
+     profiles.phone = '' // this is the value of the currently clicked author
+     profiles.email = '' // this is the value of textarea
+     profiles.descript = ''
+     profiles.typeEquipment = ''
+     profiles.profilePic = ''
+     profiles.photo1 =''
+     profiles.photo2 =''
+     profiles.photo3 =''
+     profiles.photo4 =''
+     profiles.list = profileFactory.profiles
+    
+    
+     profiles.addProfile = function() {
+        console.debug('pressed submit');
+            var tempArray=[];
+            if(profiles.photo1 != ''){
+                tempArray.push(profiles.photo1)
+            }
+            if(profiles.photo2 != ''){
+                tempArray.push(profiles.photo2)
+            }
+            if(profiles.photo3 != ''){
+                tempArray.push(profiles.photo3)
+            }
+            if(profiles.photo4!= ''){
+                tempArray.push(profiles.photo4)
+            }
+            var object = {
+                rate            :  profiles.rate,
+                phone           :  profiles.phone,
+                email           :  profiles.email,
+                descript        :  profiles.descript,
+                typeEquipment   :  profiles.typeEquipment,
+                profilePic      :  profiles.profilePic,
+                photos          :  tempArray
+                
+                
+            }
+       
+            profileFactory. profiles.push(
+                object
+                
+                // rate:  profiles.rate,
+                // phone:  profiles.phone,
+                // email:  profiles.email,
+                // descript : profiles.descript,
+                // typeEquipment : profiles.typeEquipment,
+                // profilePic :profiles.profilePic,
+                
+                // photos : [profiles.photo1,profiles.photo2,profiles.photo3,profiles.photo4]
+                
+                // photo2 : profiles.photo2,
+                // photo3 : profiles.photo3,
+                // photo4 : profiles.photo4
+                 
+            )
+        
+        console.debug(profileFactory. profiles)
+
+         profiles.rate='' // because of data binding, this will clear the form value for the input
+         profiles.phone=''   // because of data binding, this will clear the form value for the textarea
+         profiles.email=''
+         profiles.descript =''
+         profiles.typeEquipment =''
+         //profiles.photos =[]
+        //  profiles.photo2 =''
+        //  profiles.photo3;
+        //  profiles.photo4;
+        
+         
+    }
+    
+}
+
+function profileFactory(){
+    console.log('factory is working')
+    return {
+        profiles: [{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg', 
+                            'http://cdn.gearpatrol.com/wp-content/uploads/2014/09/Car-Camping-Gear-Patrol-Slide-5.jpg',
+                            'http://cdn.thisiswhyimbroke.com/images/camping-gear-monthly-subscription-campbox.jpg']
+                            //'https://upload.wikimedia.org/wikipedia/commons/6/66/Camping_Equipment_(542927498).jpg']
+        }]
+    }
+}

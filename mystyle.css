@@ -174,8 +174,25 @@ nav a {
     padding:60px;
 }
 
-    
-
+.profileImg {
+    height:100px;
+    width:100px;
+    border-radius:100%;
+} 
+.equipmentFormat {
+    padding:5px;
+}
+.cantainer2 {
+                opacity:0.8;
+                background-color:#ccc;
+                position:fixed;
+                width:100vw;
+                height:100vh;
+                top:0px;
+                left:0px;
+                z-index:1000;
+                
+}
 
 @media screen and (min-width: 768px){
     .carousel-caption {
