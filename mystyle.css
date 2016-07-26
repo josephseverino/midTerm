@@ -1,0 +1,185 @@
+* {
+    margin:0;
+}
+
+body, html {
+    height:100%;
+}
+  
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom:20px;
+}
+nav {
+    position:fixed;
+    width:100%;
+    height:50px;
+    background-color:rgba(0,0,0,.5);
+    z-index:99;
+     text-align:center;
+}
+
+nav a {
+    text-decoration:none;
+    color: white;
+    margin-left:30px;
+    line-height:50px;
+   
+}
+/*.show {*/
+/*    border:3px red solid;*/
+    
+/*}*/
+
+.footer {
+    height: 300px;
+    width:100%;
+    color:white;
+    /*font-size:40px;*/
+    background-color:#2D2D2D;
+    padding-top: 3%;
+   z-index:20;
+     text-align:center;
+}
+
+#caption{
+    padding-bottom: 200px;
+}
+.section {
+    height:100%;
+    background-size:cover;
+    background-attachment: fixed;
+    /*padding-top: 30%;*/
+    /*padding-left:45%;*/
+   
+   
+   
+}
+
+
+/*.subSection {*/
+/*    height:50%;*/
+/*   background-color: #EEE;*/
+    
+/*}*/
+
+/*.campImg {*/
+/*  background-image: url('http://oddculture.com/wp-content/uploads/2015/12/Camping-Near-The-Lake-Background-Wallpaper.jpg');*/
+/*}*/
+
+/*.boardingImg {*/
+/*    background-image:url('https://i.ytimg.com/vi/GCjMaDeMP0E/maxresdefault.jpg');*/
+/*}*/
+
+/*.bikingImg {*/
+/*    background-image:url('http://i.huffpost.com/gen/1916451/images/o-BICYCLE-CITY-facebook.jpg');*/
+/*}*/
+
+.button1 {
+    height:80px;
+    width:200px;
+    background-color: rgba(173,255,71,.5);
+    color:white;
+    z-index:10;
+    text-align:center;
+    padding-top: 20px;
+    font-size:25px;
+    position:fixed;
+    cursor: pointer;
+    outline: none;
+    /*color: #fff;*/
+    /*background-color: #4CAF50;*/
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px #777;
+    top:80%;
+    left:80%;
+}
+
+.button1:hover {background-color: rgba(255,122,78,.5)}
+
+.button1:active {
+  background-color: rgba(255,122,78);
+  box-shadow: 0 5px #222;
+  transform: translateY(4px);
+}
+
+.button2 {
+    height:80px;
+    width:200px;
+    background-color: rgba(173,255,71,.5);
+    color:white;
+    z-index:10;
+    text-align:center;
+    padding-top: 20px;
+    font-size:25px;
+    position:fixed;
+    cursor: pointer;
+    outline: none;
+    /*color: #fff;*/
+    /*background-color: #4CAF50;*/
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px #777;
+    top:80%;
+    left:10%;
+}
+
+.button2:hover {background-color: rgba(255,122,78,.5)}
+
+.button2:active {
+  background-color: rgba(255,122,78);
+  box-shadow: 0 5px #222;
+  transform: translateY(4px);
+}
+
+.format {
+    line-height: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#regBtn {
+    color:white;
+    font-size: 17px;
+    height:60px;
+    width:150px;
+    background-color: #00B8F5;
+    border-color: #00B8F5;
+}
+
+.centerForm{
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-bottom: 30px
+}
+.form-control {
+   
+    width: 36%;
+}
+.formatImg img{
+    height:150px;
+    width:22%;
+    display:inline-block;
+    
+}
+.formatImg{
+    padding-left: 20px;
+    padding-top:20px;
+    border:1px #999 solid;
+    
+   
+}
+.pad {
+    padding:60px;
+}
+
+    
+
+
+@media screen and (min-width: 768px){
+    .carousel-caption {
+        
+        padding-bottom: 25%;
+    }
+}
