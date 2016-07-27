@@ -62,6 +62,7 @@ function Profiles(profileFactory){
          profiles.currentPhoto = photo
      }
      profiles.showDetails = false;
+     profiles.adPreview = false;
      profiles.rate = '' // this is the value of the input
      profiles.phone = '' // this is the value of the currently clicked author
      profiles.email = '' // this is the value of textarea

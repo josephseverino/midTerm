@@ -53,8 +53,39 @@
             <input type="checkbox"> Post my AD
           </label>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-         
+        <div>
+             <button type="submit" class="btn btn-default">Submit</button>
+             <button ng-click="profiles.adPreview = !profiles.adPreview" class="btn btn-default blueBtn">Preview</button>
+             <div ng-show="profiles.adPreview" id="modal2">
+                   <a ng-click="profiles.adPreview = !profiles.adPreview">CLOSE</a>
+                   <div  class="demoProfile"> 
+                      <div  >
+                         
+                                  
+                          
+                          <!--<img ng-click="profiles.showDetails = ! profiles.showDetails" ng-repeat="photo in profile.photos track by $index"ng-src="{{ photo }}" class="equipmentFormat">-->
+                           <img ng-src="{{ photo }}" >
+                          
+                      
+                  
+                          
+                          <h2>  {{profile.city}}, {{profile.state}}</h2>
+                               
+                          <h4>  Email: {{ profile.email }}</h4>
+                          <h5>  Phone Number: {{ profile.phone }}</h5>
+                          <h5>  Type of Equipment: {{profile.typeEquipment}}</h5>
+                          <h5>  Rate: {{ profile.rate }}</h5>
+                          <p>   Description: {{profile.descript}}</p>
+                          <img ng-src="{{profile.profilePic}}">
+                               
+                  </div>
+ 
+
+ 
+             </div>
+             
+        </div>
+       
     
 
 
