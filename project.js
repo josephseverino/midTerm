@@ -56,10 +56,17 @@ Profiles.$inject = ['profileFactory']
 function Profiles(profileFactory){
     console.log('Profiles function is good')
     var profiles = this;
-    
+     profiles.getPic = function(photo){
+         console.log(photo)
+         profiles.showDetails = ! profiles.showDetails
+         profiles.currentPhoto = photo
+     }
+     profiles.showDetails = false;
      profiles.rate = '' // this is the value of the input
      profiles.phone = '' // this is the value of the currently clicked author
      profiles.email = '' // this is the value of textarea
+     profiles.city = ''
+     profiles.state = ''
      profiles.descript = ''
      profiles.typeEquipment = ''
      profiles.profilePic = ''
@@ -92,6 +99,8 @@ function Profiles(profileFactory){
                 descript        :  profiles.descript,
                 typeEquipment   :  profiles.typeEquipment,
                 profilePic      :  profiles.profilePic,
+                city            :  profiles.city,
+                state           :  profiles.state,
                 photos          :  tempArray
                 
                 
@@ -122,10 +131,12 @@ function Profiles(profileFactory){
          profiles.email=''
          profiles.descript =''
          profiles.typeEquipment =''
-         //profiles.photos =[]
-        //  profiles.photo2 =''
-        //  profiles.photo3;
-        //  profiles.photo4;
+         profiles.city = ''
+         profiles.state = ''
+         profiles.photo1 =''
+         profiles.photo2 =''
+         profiles.photo3=''
+         profiles.photo4=''
         
          
     }
@@ -142,10 +153,231 @@ function profileFactory(){
             descript     : 'BLah blah Blah',
             typeEquipment: 'Water Sports',
             profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
-            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg', 
-                            'http://cdn.gearpatrol.com/wp-content/uploads/2014/09/Car-Camping-Gear-Patrol-Slide-5.jpg',
-                            'http://cdn.thisiswhyimbroke.com/images/camping-gear-monthly-subscription-campbox.jpg']
-                            //'https://upload.wikimedia.org/wikipedia/commons/6/66/Camping_Equipment_(542927498).jpg']
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },
+        {
+            rate         : '$10/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Bikes',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://www.besportier.com/archives/new-designer-bicycles-sexy-bicycles.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Boulder',
+            state        : 'Colorado',
+            photos       : ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfINwLkMVIBRC0ZpT5gAOufXOU2TcEtv6e59aH1OwE-N71Y30T']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Frederick',
+            state        : 'Colorado',
+            photos       : ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfINwLkMVIBRC0ZpT5gAOufXOU2TcEtv6e59aH1OwE-N71Y30T']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfINwLkMVIBRC0ZpT5gAOufXOU2TcEtv6e59aH1OwE-N71Y30T']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Denver',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
         }]
     }
 }
+
