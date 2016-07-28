@@ -137,8 +137,8 @@ nav a:visited {
     color:white;
     z-index:10;
     text-align:center;
-    padding-top: 20px;
-    font-size:25px;
+    padding-top: 15px;
+    font-size:26px;
     position:fixed;
     cursor: pointer;
     outline: none;
