@@ -1,97 +1,46 @@
-<!--<div class="row pad"> -->
-<!--    <div class="formatImg col-xs-4">-->
-<!--        <img ng-click="showDetails = ! showDetails" src="http://media.jrn.com/images/WT_campgear_all.jpg">-->
-<!--        <img ng-click="showDetails = ! showDetails" src="http://cdn.gearpatrol.com/wp-content/uploads/2014/09/Car-Camping-Gear-Patrol-Slide-5.jpg">-->
-<!--        <img ng-click="showDetails = ! showDetails" src="http://cdn.thisiswhyimbroke.com/images/camping-gear-monthly-subscription-campbox.jpg">-->
-<!--        <img ng-click="showDetails = ! showDetails" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Camping_Equipment_(542927498).jpg">-->
-        
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/2000px-Magnifying_glass_icon.svg.png" ng-click="profiles.showNav = !profiles.showNav" class="nav-block-toggle">
+
+<nav ng-show="profiles.showNav" id="sideNav">
     
-<!--        <h4>Name</h4>-->
-<!--        <h5>email@email.com</h5>-->
-<!--        <h5>Type of Equipment</h5>-->
-<!--        <h5>Rate: $40/day</h5>-->
-<!--        <p>Set includes 4 polypropylene plates, 4 bowls, 4 insulated mugs with Sip-It lids, 2-liter pot with lid,-->
-<!--        3-liter pot with lid, frypan, pot gripper and a welded sink/stuff sack-->
-<!--        All items nest neatly within the 3-liter pot and stow in the welded sink/stuff sack for easy packing-->
-<!--        Pinnacle-series hard-anodized aluminum pots and frypan distribute heat evenly for efficient cooking; T-->
-<!--        eflon® Radiance technology offers supreme scratch resistance-->
-<!--        Teflon Radiance features a specially formulated topcoat to enhance heat dispersion for quick heating; -->
-<!--        nonstick coating is tough enough to handle use with most metal utensils-->
-<!--        Lightweight, BPA-free plastic pot lids feature integrated strainers ideal for use with pasta and steamed -->
-<!--        vegetables; flip-up tabs on top make for easy lid removal-->
+    <div class="centerNav">
+        <h3>Search By City </h3>
+        <input   type="text" ng-model="profiles.search.city"  placeholder="City">
+        <h3>Search By State</h3>
+        <input   type="text" ng-model="profiles.search.state"  placeholder="State">
        
-<!--        </p>-->
-<!--         <img class="profileImg"src="http://www.hotstarz.info/wp-content/uploads/2015/08/2014-02-08-9679-1248_Bill_Murray_IMG_x900.jpg">-->
-<!--    </div>-->
-<!--    <section  class="container2" ng-show="showDetails">-->
-               
-<!--            <div>-->
-<!--                <img src="http://media.jrn.com/images/WT_campgear_all.jpg">-->
-<!--                <button ng-click="showDetails = ! showDetails"> X (EXIT) </button>-->
-                     
-<!--            </div>-->
     
-<!--    </section>-->
-           
-
-<!--    <div class="formatImg col-xs-4">-->
-<!--        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq431NsBqI-98oTA3p-0Y9cT7fSEfu150MyghM9a7NCes2Vklh">-->
-        
-<!--        <h4>Name</h4>-->
-<!--        <h5>email@email.com</h5>-->
-<!--        <h5>Type of Equipment</h5>-->
-<!--        <h5>Rate: $40/day</h5>-->
-<!--        <p>Set includes 4 polypropylene plates, 4 bowls, 4 insulated mugs with Sip-It lids, 2-liter pot with lid,-->
-<!--        3-liter pot with lid, frypan, pot gripper and a welded sink/stuff sack-->
-<!--        All items nest neatly within the 3-liter pot and stow in the welded sink/stuff sack for easy packing-->
-<!--        Pinnacle-series hard-anodized aluminum pots and frypan distribute heat evenly for efficient cooking; T-->
-<!--        eflon® Radiance technology offers supreme scratch resistance-->
-<!--        Teflon Radiance features a specially formulated topcoat to enhance heat dispersion for quick heating; -->
-<!--        nonstick coating is tough enough to handle use with most metal utensils-->
-<!--        Lightweight, BPA-free plastic pot lids feature integrated strainers ideal for use with pasta and steamed -->
-<!--        vegetables; flip-up tabs on top make for easy lid removal-->
+       
+        <div>
+            <h3>Search By Type of Equipment</h3>
+            <select ng-model="profiles.search.typeEquipment">
+                <option></option>
+                <option>Water Sports</option>
+                <option>Camping related</option>
+                <option>Winter Sports</option>
+                <option>Biking</option>
+                <option>Misc</option>
+                
+            </select>
+         <button id="submit" type="button" value="Geocode"ng-click="profiles.showNav = !profiles.showNav"  class="btn btn-default">Filter</button>
+         </div>
          
-<!--        </p>-->
+    </div>
+    
         
-<!--        <img class="profileImg"src="http://vignette2.wikia.nocookie.net/seinfeld/images/8/86/Letterman.jpg/revision/latest?cb=20130830170025">-->
-<!--    </div>-->
-
-<!--    <div class="formatImg col-xs-4">-->
-<!--        <img src="http://images.evo.com/imgp/1500/83375/373111/slingshot-terrain-wakeboard-2015-136.jpg">-->
-<!--        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT84yZHCN2c8rwP14TSh3g_-XlFMv-rMe_JYpdGz9jz8Upfsob-7g">-->
-<!--        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5I1O1yWVxkLkpLT9oakCf95K1z33BeH5F-R6W6DMFvGYzIU0i">-->
-<!--        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeHEYlZSKlmI8wV_R2-Mib6T8MRKj7naFVNzgvtortjJ44jvDjdw">-->
-<!--        <h4>Name</h4>-->
-<!--        <h5>email@email.com</h5>-->
-<!--        <h5>Type of Equipment</h5>-->
-<!--        <h5>Rate: $40/day</h5>-->
-<!--        <p>Set includes 4 polypropylene plates, 4 bowls, 4 insulated mugs with Sip-It lids, 2-liter pot with lid,-->
-<!--        3-liter pot with lid, frypan, pot gripper and a welded sink/stuff sack-->
-<!--        All items nest neatly within the 3-liter pot and stow in the welded sink/stuff sack for easy packing-->
-<!--        Pinnacle-series hard-anodized aluminum pots and frypan distribute heat evenly for efficient cooking; T-->
-<!--        eflon® Radiance technology offers supreme scratch resistance-->
-<!--        Teflon Radiance features a specially formulated topcoat to enhance heat dispersion for quick heating; -->
-<!--        nonstick coating is tough enough to handle use with most metal utensils-->
-<!--        Lightweight, BPA-free plastic pot lids feature integrated strainers ideal for use with pasta and steamed -->
-<!--        vegetables; flip-up tabs on top make for easy lid removal-->
-<!--        </p>-->
-<!--        <img class="profileImg"src="http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg">-->
-         
-<!--    </div>-->
-<!--</div>-->
+</nav>
 
 
 <div  class="row pad"> 
-    <div ng-repeat="profile in profiles.list track by $index" class="formatImg col-xs-4">
+    <div ng-repeat="profile in profiles.list  | filter: profiles.search" class="formatImg col-xs-4">
        
                 
         
         <!--<img ng-click="profiles.showDetails = ! profiles.showDetails" ng-repeat="photo in profile.photos track by $index"ng-src="{{ photo }}" class="equipmentFormat">-->
-         <img ng-click="profiles.getPic(photo)" ng-repeat="photo in profile.photos track by $index"ng-src="{{ photo }}" class="equipmentFormat">
+         <img ng-click="profiles.getPic(photo)" ng-repeat="photo in profile.photos track by $index "ng-src="{{ photo }}" class="equipmentFormat">
         
         <div  id="modal" ng-show="profiles.showDetails">
                <img  ng-src="{{ profiles.currentPhoto }}">
-                <div >
+                <div>
                     
                     <button class="extBtn" ng-click="profiles.showDetails = ! profiles.showDetails"> CLOSE </button>
                 </div>

@@ -1,13 +1,13 @@
 
 
-    <form class="centerForm">
+    <form  class="centerForm">
         <div class="form-group">
           <label >Email address</label>
-          <input type="email" class="form-control" placeholder="Email" ng-model="profiles.email">
+          <input type="email" class="form-control" placeholder="Email"  ng-model="profiles.email">
         </div>
         <div class="form-group">
           <label >City</label>
-          <input type="text" class="form-control"  placeholder="City" ng-model="city"ng-model="profiles.city">
+          <input type="text" class="form-control"  placeholder="City" ng-model="profiles.city">
         </div>
         <div class="form-group">
           <label >State</label>
@@ -19,11 +19,11 @@
         </div>
         <div class="form-group">
           <label >How much do you want charge</label>
-          <input type="text" class="form-control"  placeholder="e.g. $50/day" ng-model="profiles.rate">
+          <input type="text" class="form-control"  placeholder="e.g. $50/day"  ng-model="profiles.rate">
         </div>
         <div class="form-group">
           <label >Select the type equipment</label>
-           <select class="form-control" ng-model="profiles.typeEquipment">
+           <select class="form-control"  ng-model="profiles.typeEquipment">
             <option>Water Sports</option>
             <option>Camping related</option>
             <option>Winter Sports</option>
@@ -33,19 +33,19 @@
         </div>
        
           
-       <textarea class="form-control" rows="3" placeholder="Description of your gear" ng-model="profiles.descript"></textarea>
+       <textarea class="form-control" rows="3" placeholder="Description of your gear"  ng-model="profiles.descript"></textarea>
         
         <div class="form-group">
           <label >Profile Picture</label>
-          <input ng-model="profiles.profilePic"type="text" class="form-control" placeholder="URL here">
+          <input  ng-model="profiles.profilePic" type="text" class="form-control" placeholder="URL here">
           <p class="help-block">Upload the photo that you want to use on your profile</p>
         </div>
         <div class="form-group">
           <label >Pictures of your gear</label>
-          <input ng-model="profiles.photo1"type="text" class="form-control" placeholder="URL here" >
+          <input  ng-model="profiles.photo1"type="text" class="form-control" placeholder="URL here" >
           <input ng-model="profiles.photo2"type="text" class="form-control" placeholder="URL here" >
-          <input ng-model="profiles.photo3"type="text" class="form-control" placeholder="URL here" >
-          <input ng-model="profiles.photo4"type="text" class="form-control" placeholder="URL here" >
+          <input  ng-model="profiles.photo3"type="text" class="form-control" placeholder="URL here" >
+          <input  ng-model="profiles.photo4"type="text" class="form-control" placeholder="URL here" >
           <p class="help-block">Upload photos that will be used to display the gear you want to loan out</p>
         </div>
         <div class="checkbox">
@@ -54,8 +54,10 @@
           </label>
         </div>
         <div>
-             <button type="submit" class="btn btn-default">Submit</button>
+             
+             <input type="submit" value="Submit" class="btn btn-default">
              <a ng-click="profiles.adPreview = !profiles.adPreview" class="btn btn-default blueBtn">Preview</a>
+             
              <div ng-show="profiles.adPreview" id="modal2">
                    <a ng-click="profiles.adPreview = !profiles.adPreview">CLOSE</a>
                    <div  class="demoProfile"> 
@@ -64,19 +66,19 @@
                                   
                           
                           <!--<img ng-click="profiles.showDetails = ! profiles.showDetails" ng-repeat="photo in profile.photos track by $index"ng-src="{{ photo }}" class="equipmentFormat">-->
-                           <img ng-src="{{ photo }}" >
+                           <img class="demoPhoto" ng-src="{{ profiles.photo1 }}" >
                           
                       
                   
                           
-                          <h2>  {{city}}, {{profiles.state}}</h2>
+                          <h2>  {{profiles.city}}, {{profiles.state}}</h2>
                                
-                          <h4>  Email: {{ profile.email }}</h4>
-                          <h5>  Phone Number: {{ profile.phone }}</h5>
-                          <h5>  Type of Equipment: {{profile.typeEquipment}}</h5>
-                          <h5>  Rate: {{ profile.rate }}</h5>
-                          <p>   Description: {{profile.descript}}</p>
-                          <img ng-src="{{profile.profilePic}}">
+                          <h4>  Email: {{ profiles.email }}</h4>
+                          <h5>  Phone Number: {{ profiles.phone }}</h5>
+                          <h5>  Type of Equipment: {{profiles.typeEquipment}}</h5>
+                          <h5>  Rate: {{ profiles.rate }}</h5>
+                          <p>   Description: {{profiles.descript}}</p>
+                          <img class="demoProfilePic" ng-src="{{ profiles.profilePic  }}">
                                
                   </div>
  
@@ -85,6 +87,8 @@
              </div>
              
         </div>
+        </div>
+        </form>
        
     
 
