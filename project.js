@@ -226,7 +226,7 @@ function profileFactory(){
             email        : 'johnny@mail.com',
             descript     : 'BLah blah Blah',
             typeEquipment: 'Bikes',
-            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            profilePic   : 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4zxg1UclNnfVB3OWJV6lDKi61sMx-535xArybUoWWcC-qtTHR4Q',
             city         : 'Aurora',
             state        : 'Colorado',
             photos       : ['http://www.besportier.com/archives/new-designer-bicycles-sexy-bicycles.jpg']
@@ -236,7 +236,7 @@ function profileFactory(){
             email        : 'johnny@mail.com',
             descript     : 'BLah blah Blah',
             typeEquipment: 'Water Sports',
-            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            profilePic   : 'https://c2.staticflickr.com/2/1476/25862903591_ea695c9ace_b.jpg',
             city         : 'Boulder',
             state        : 'Colorado',
             photos       : ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfINwLkMVIBRC0ZpT5gAOufXOU2TcEtv6e59aH1OwE-N71Y30T']
@@ -246,10 +246,10 @@ function profileFactory(){
             email        : 'johnny@mail.com',
             descript     : 'BLah blah Blah',
             typeEquipment: 'Bikes',
-            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            profilePic   : 'https://upload.wikimedia.org/wikipedia/commons/1/14/Im_With_Coco.jpg',
             city         : 'Frederick',
             state        : 'Colorado',
-            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+            photos       : ['http://cdn.shopify.com/s/files/1/0232/3305/products/State_Bicycle_Bicycles_CityBikes_FourPeaks-1_large.JPG?v=1416597107']
         },{
             rate         : '$5/day',
             phone        : '720-318-2957',
@@ -259,7 +259,7 @@ function profileFactory(){
             profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
             city         : 'Lakewood',
             state        : 'Colorado',
-            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+            photos       : ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0mYoeHAklf3lRIfTN1a27EQPbMwpXQnueaFbo7wpDHbNQVpn']
         }
         // ,{
         //     rate         : '$5/day',
