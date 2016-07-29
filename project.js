@@ -255,33 +255,54 @@ function profileFactory(){
             phone        : '720-318-2957',
             email        : 'johnny@mail.com',
             descript     : 'BLah blah Blah',
-            typeEquipment: 'Water Sports',
+            typeEquipment: 'Camping related',
             profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
             city         : 'Lakewood',
             state        : 'Colorado',
-            photos       : ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0mYoeHAklf3lRIfTN1a27EQPbMwpXQnueaFbo7wpDHbNQVpn']
+            photos       : ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE8_96L_EDIZZhUbky5-iRuLXI3BO8SxnSKRBUqnd1HuqTw8Zm']
+        },
+        {
+            rate         : '$10/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Misc',
+            profilePic   : 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4zxg1UclNnfVB3OWJV6lDKi61sMx-535xArybUoWWcC-qtTHR4Q',
+            city         : 'Aurora',
+            state        : 'Colorado',
+            photos       : ['https://upload.wikimedia.org/wikipedia/commons/8/8d/Band_set-up_Lincoln_Hall.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'https://c2.staticflickr.com/2/1476/25862903591_ea695c9ace_b.jpg',
+            city         : 'Boulder',
+            state        : 'Colorado',
+            photos       : ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfINwLkMVIBRC0ZpT5gAOufXOU2TcEtv6e59aH1OwE-N71Y30T']
         }
-        // ,{
-        //     rate         : '$5/day',
-        //     phone        : '720-318-2957',
-        //     email        : 'johnny@mail.com',
-        //     descript     : 'BLah blah Blah',
-        //     typeEquipment: 'Water Sports',
-        //     profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
-        //     city         : 'Colorado Springs',
-        //     state        : 'Colorado',
-        //     photos       : ['https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfINwLkMVIBRC0ZpT5gAOufXOU2TcEtv6e59aH1OwE-N71Y30T']
-        // },{
-        //     rate         : '$5/day',
-        //     phone        : '720-318-2957',
-        //     email        : 'johnny@mail.com',
-        //     descript     : 'BLah blah Blah',
-        //     typeEquipment: 'Bikes',
-        //     profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
-        //     city         : 'Arvada',
-        //     state        : 'Colorado',
-        //     photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
-        // },{
+        ,{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Water Sports',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Colorado Springs',
+            state        : 'Colorado',
+            photos       : ['https://c1.staticflickr.com/8/7264/7509283792_061a339ef9_b.jpg']
+        },{
+            rate         : '$5/day',
+            phone        : '720-318-2957',
+            email        : 'johnny@mail.com',
+            descript     : 'BLah blah Blah',
+            typeEquipment: 'Bikes',
+            profilePic   : 'http://www.thefamouspeople.com/profiles/images/mitch-hedberg-2.jpg',
+            city         : 'Arvada',
+            state        : 'Colorado',
+            photos       : ['http://media.jrn.com/images/WT_campgear_all.jpg']
+        }
         //     rate         : '$5/day',
         //     phone        : '720-318-2957',
         //     email        : 'johnny@mail.com',
