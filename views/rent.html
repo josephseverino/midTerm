@@ -31,8 +31,9 @@
 
 
 <div  class="row pad"> 
-    <div ng-repeat="profile in profiles.list  | filter: profiles.search" class="formatImg col-xs-4">
-       
+    
+    <div ng-repeat="profile in profiles.list  | filter: profiles.search" class="formatImg col-xs-3">
+       <div class="col-xs-1"></div>
                 
         
         <!--<img ng-click="profiles.showDetails = ! profiles.showDetails" ng-repeat="photo in profile.photos track by $index"ng-src="{{ photo }}" class="equipmentFormat">-->
@@ -61,4 +62,4 @@
 </div>
  
 
- 
+ <div class="col-xs-1"></div>
